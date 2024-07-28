@@ -11,7 +11,7 @@ function App() {
   //get the notes from database
   async function getNotes() {
     try {
-      const response = await fetch("http://localhost:3000/", {
+      const response = await fetch("https://react4-server.vercel.app/", {
         method: "GET"
       });
       const jsonData = await response.json();

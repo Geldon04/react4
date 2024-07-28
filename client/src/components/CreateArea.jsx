@@ -34,7 +34,7 @@ function CreateArea(props) {
    async function submitNote(e)  {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:3000/add", {
+      const response = await fetch("https://react4-server.vercel.app/add", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(newNote)

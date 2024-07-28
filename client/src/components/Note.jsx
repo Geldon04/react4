@@ -5,7 +5,7 @@ function Note(props) {
 
   async function deleteNote(id) {
     try {
-      const url = `http://localhost:3000/delete/${encodeURIComponent(id)}`;
+      const url = `https://react4-server.vercel.app/delete/${encodeURIComponent(id)}`;
       const response = await fetch(url, {
         method: "DELETE"
       });
